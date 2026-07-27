@@ -8,7 +8,7 @@ namespace Application.Interfaces.Repositories
             CancellationToken cancellationToken = default);
 
         Task<Faculty?> GetByIdAsync(
-            int id,
+            Guid id,
             CancellationToken cancellationToken = default);
 
         Task AddAsync(
