@@ -9,7 +9,7 @@ namespace Application.Interfaces.Services
             CancellationToken cancellationToken = default);
 
         Task<FacultyDTO> GetByIdAsync(
-            int id,
+            Guid id,
             CancellationToken cancellationToken = default);
 
         Task<FacultyDTO> AddAsync(
@@ -17,7 +17,7 @@ namespace Application.Interfaces.Services
             CancellationToken cancellationToken = default);
 
         Task DeleteAsync(
-            int id,
+            Guid id,
             CancellationToken cancellationToken = default);
     }
 }
